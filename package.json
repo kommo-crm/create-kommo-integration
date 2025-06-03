@@ -1,7 +1,7 @@
 {
   "name": "@kommo-crm/create-kommo-integration",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "cli/index.js",
   "bin": {
     "create-kommo-integration": "dist/cli/index.js"
   },
