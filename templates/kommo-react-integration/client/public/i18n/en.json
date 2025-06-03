@@ -1,0 +1,46 @@
+{
+  "widget": {
+    "name": "Kommo integration",
+    "short_description": "Short description",
+    "description": "Full description",
+    "tour_description": "Tour description"
+  },
+  "settings": {
+    "text": "Enter some text"
+  },
+  "advanced": {
+    "title": "React Widget Boilerplate"
+  },
+  "salesbot": {
+    "button_title": "Button title",
+    "button_caption": "Button caption",
+    "button_title_default_value": "Button title",
+    "button_caption_default_value": "Button caption",
+    "text": "Text",
+    "number": "Number",
+    "url": "URL",
+    "handler_name": "Handler name",
+    "success_callback_title": "Success",
+    "fail_callback_title": "Fail"
+  },
+  "Your title in the widget’s modal": "Your title in the widget’s modal",
+  "The button at the bottom will open the advanced settings page, but only after saving": "The button at the bottom will open the advanced settings page, but only after saving",
+  "Click": "Click",
+  "You saved this text in the settings": "You saved this text in the settings",
+  "Default": "Default",
+  "Call": "Call",
+  "Error": "Error",
+  "Notifications": "Notifications",
+  "Notification header text": "Notification header text",
+  "Enter the notification header text here": "Enter the notification header text here",
+  "Notification text": "Notification text",
+  "Enter the notification text here": "Enter the notification text here",
+  "Select type of notification": "Select type of notification",
+  "Notify": "Notify",
+  "You can read more about the notifications": "You can read more about the notifications",
+  "here": "here",
+  "success": "Success",
+  "fail": "Fail",
+  "Congratulations!": "Congratulations!",
+  "Your widget was successfully initialized!": " Your widget was successfully initialized!"
+}

@@ -1,0 +1,31 @@
+.notificationCreator {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 3px;
+  gap: 20px;
+  background: var(--palette-background-primary);
+  cursor: default;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  gap: 5px;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 500px;
+}
+
+.button {
+  width: max-content;
+}
+
+.heading {
+  font-size: 20px;
+}

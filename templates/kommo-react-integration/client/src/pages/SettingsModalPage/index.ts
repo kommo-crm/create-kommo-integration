@@ -1,0 +1,1 @@
+export { SettingsModalPage } from './SettingsModalPage';

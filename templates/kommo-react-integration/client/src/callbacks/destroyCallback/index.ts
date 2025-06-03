@@ -1,0 +1,1 @@
+export { destroyCallback } from './destroyCallback';

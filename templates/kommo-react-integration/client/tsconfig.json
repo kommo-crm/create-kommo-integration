@@ -1,0 +1,38 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "strict": true,
+    "skipLibCheck": true,
+
+    "sourceMap": true,
+    "declaration": false,
+    "downlevelIteration": true,
+    "importHelpers": true,
+    "target": "es6",
+
+    "moduleResolution": "node",
+
+    "lib": ["dom"],
+
+    "jsx": "react-jsx",
+    "baseUrl": ".",
+
+    "paths": {
+      "@ui/*": ["./src/ui/*"],
+      "@hoc/*": ["./src/hoc/*"],
+      "@api/*": ["./src/api/*"],
+      "@utils/*": ["./src/utils/*"],
+      "@pages/*": ["./src/pages/*"],
+      "@hooks/*": ["./src/hooks/*"],
+      "@components/*": ["./src/components/*"],
+      "@shared/*": ["./src/shared/*"],
+      "@callbacks/*": ["./src/callbacks/*"],
+      "@constants/*": ["./src/constants/*"],
+      "vendor/*": ["./vendor/*"]
+    }
+  },
+
+  "exclude": ["node_modules", "**/node_modules/*", "dist"]
+}

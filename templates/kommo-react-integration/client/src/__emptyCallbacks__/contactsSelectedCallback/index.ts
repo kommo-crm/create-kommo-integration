@@ -1,0 +1,1 @@
+export { contactsSelectedCallback } from './contactsSelectedCallback';

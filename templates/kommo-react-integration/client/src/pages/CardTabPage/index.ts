@@ -1,0 +1,1 @@
+export { CardTabPage } from './CardTabPage';

@@ -1,0 +1,1 @@
+export { initMenuPageCallback } from './initMenuPageCallback';

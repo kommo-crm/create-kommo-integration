@@ -1,0 +1,15 @@
+services:
+  widget.dev:
+    build:
+      context: .
+      dockerfile: deploy/dev/Dockerfile
+    image: create-kommo-integration:latest
+    container_name: create-kommo-integration
+    environment:
+      ENVIRONMENT: dev
+    ports:
+      - '9000:9000'
+    volumes:
+      - ./:/opt/app
+      - /opt/app/node_modules
+    restart: always

@@ -1,0 +1,46 @@
+{
+  "widget": {
+    "name": "Kommo integration",
+    "short_description": "Short description",
+    "description": "Full description",
+    "tour_description": "Tour description"
+  },
+  "settings": {
+    "text": "Ingrese algo de texto"
+  },
+  "advanced": {
+    "title": "React Widget Boilerplate"
+  },
+  "salesbot": {
+    "button_title": "Título del botón",
+    "button_caption": "Subtítulo del botón",
+    "button_title_default_value": "Título del botón",
+    "button_caption_default_value": "Subtítulo del botón",
+    "text": "Texto",
+    "number": "Número",
+    "url": "URL",
+    "handler_name": "Nombre del manejador",
+    "success_callback_title": "Éxito",
+    "fail_callback_title": "Fallo"
+  },
+  "Your title in the widget’s modal": "Tu título en el modal del widget",
+  "The button at the bottom will open the advanced settings page, but only after saving": "El botón en la parte inferior abrirá la página de configuración avanzada, pero solo después de guardar",
+  "Click": "Click",
+  "You saved this text in the settings": "Guardaste este texto en la configuración",
+  "Default": "Por defecto",
+  "Call": "Llamada",
+  "Error": "Error",
+  "Notifications": "Notificaciones",
+  "Notification header text": "Texto del encabezado de notificación",
+  "Enter the notification header text here": "Ingrese el texto del encabezado de la notificación aquí",
+  "Notification text": "Texto de notificación",
+  "Enter the notification text here": "Ingrese el texto de notificación aquí",
+  "Select type of notification": "Seleccione el tipo de notificación",
+  "Notify": "Notificar",
+  "You can read more about the notifications": "Puede leer más sobre las notificaciones",
+  "here": "aquí",
+  "success": "Éxito",
+  "fail": "Fallo",
+  "Congratulations!": "¡Felicidades!",
+  "Your widget was successfully initialized!": "¡Su widget fue inicializado exitosamente!"
+}

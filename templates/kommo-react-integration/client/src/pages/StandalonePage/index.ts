@@ -1,0 +1,1 @@
+export { StandalonePage } from './StandalonePage';
