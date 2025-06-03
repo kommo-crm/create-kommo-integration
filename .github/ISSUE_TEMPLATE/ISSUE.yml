@@ -1,0 +1,50 @@
+name: Issue
+description: Ask a question or report a problem with UI Kit or the documentation
+labels: ['Bug', 'untriaged']
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use [this template](https://github.com/kommo-crm/create-kommo-integration/issues/new?labels=Feature+request&template=FEATURE_REQUEST.yml) for feature requests.
+  - type: textarea
+    id: summary
+    attributes:
+      label: Summary
+      description: Provide a short description of the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      description: What should happen?
+  - type: textarea
+    id: actual-behavior
+    attributes:
+      label: Actual behavior
+      description: What happens instead of the expected behavior?
+      value: |
+        Wrap animated gifs/videos in a details tag:
+        <details>
+          <summary>Summary of your gif(s)</summary>
+          <img src="..." alt="Description of what the gif shows">
+        </details>
+  - type: dropdown
+    id: react-components
+    attributes:
+      label: Are you using React components?
+      options:
+        - 'Yes'
+        - 'No'
+  - type: input
+    id: package-version-number
+    attributes:
+      label: Package version number
+  - type: input
+    id: browser
+    attributes:
+      label: Browser
+  - type: input
+    id: device
+    attributes:
+      label: Device
