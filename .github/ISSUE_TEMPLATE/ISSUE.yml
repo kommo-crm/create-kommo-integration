@@ -1,5 +1,5 @@
 name: Issue
-description: Ask a question or report a problem with UI Kit or the documentation
+description: Ask a question or report a problem with Create Kommo Integration or the documentation
 labels: ['Bug', 'untriaged']
 body:
   - type: markdown
