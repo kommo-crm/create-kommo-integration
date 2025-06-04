@@ -9,13 +9,13 @@ This CLI tool helps developers quickly generate a widget project with the requir
 Ensure you have **Node.js** installed on your system, then install the CLI globally or use npx:
 
 ```
-npx @kommo-crm/create-kommo-integration <directory-name> --en
+npx @kommo-crm/create-kommo-integration@latest <directory-name> --en
 ```
 
 or install it globally:
 
 ```
-npm install -g @kommo-crm/create-kommo-integration
+npm install -g @kommo-crm/create-kommo-integration@latest
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ npm install -g @kommo-crm/create-kommo-integration
 Run the CLI with the following command:
 
 ```
-@kommo-crm/create-kommo-integration [directory] [options]
+@kommo-crm/create-kommo-integration@latest [directory] [options]
 ```
 
 ### Options
@@ -37,7 +37,7 @@ If no language is specified, the CLI will prompt you to select one.
 ## Example Usage
 
 ```
-@kommo-crm/create-kommo-integration my-widget --en
+@kommo-crm/create-kommo-integration@latest my-widget --en
 ```
 
 This command creates a new widget project named _my-widget_ with English as the selected language of CLI interface.
