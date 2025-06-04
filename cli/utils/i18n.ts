@@ -1,11 +1,9 @@
 import fs from 'fs';
 import path from 'path';
-import { fileURLToPath } from 'url';
 
 import { AvailableLocale } from '../types.js';
 
 const translations: Record<string, string> = {};
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
 export const setLocale = (locale: AvailableLocale): void => {
   const localesPath = path.join(__dirname, '..', 'locales', `${locale}.json`);

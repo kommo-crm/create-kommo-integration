@@ -33,8 +33,10 @@ export const updateManifest = async (options: {
   manifestJson.widget.locale = locales;
   manifestJson.locations = locations;
 
-  manifestJson.widget.support.link = support.link;
-  manifestJson.widget.support.email = support.email;
+  manifestJson.widget.support = {
+    link: support.link,
+    email: support.email,
+  };
 
   locations.forEach((location: string) => {
     switch (location) {

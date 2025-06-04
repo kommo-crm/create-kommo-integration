@@ -7,6 +7,8 @@ import { i18n } from '../utils/i18n.js';
 
 export const installDeps = async (projectDir: string) => {
   try {
+    log(chalk.blue(i18n('Installing dependencies...')));
+
     execSync(`cd "${projectDir}/client" && yarn install`);
 
     log(chalk.green(i18n('Dependencies successfully installed!')));

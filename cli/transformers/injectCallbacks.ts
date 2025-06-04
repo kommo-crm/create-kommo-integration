@@ -1,6 +1,8 @@
 import fs from 'fs-extra';
 
-import prettier from 'prettier';
+import * as prettier from 'prettier/standalone';
+import * as prettierPluginBabel from 'prettier/plugins/babel';
+import * as prettierPluginEstree from 'prettier/plugins/estree';
 
 import * as parser from '@babel/parser';
 import traverse from '@babel/traverse';
@@ -160,7 +162,7 @@ export const injectCallbackToIntegrationSetupFile = async ({
   /**
    * Collect all needed info from integration file
    */
-  traverse.default(ast, {
+  traverse(ast, {
     ImportDeclaration(path) {
       const source = path.node.source.value;
 
@@ -284,13 +286,15 @@ export const injectCallbackToIntegrationSetupFile = async ({
     }
   }
 
-  const generated = generate.default(ast, { retainLines: true }).code;
+  const generated = generate(ast, { retainLines: true }).code;
 
   const prettierConfig = await fs.readFile(`${projectDir}/.prettierrc`, 'utf8');
 
   const formatted = await prettier.format(generated, {
-    parser: 'typescript',
     ...JSON.parse(prettierConfig),
+
+    parser: 'babel',
+    plugins: [prettierPluginBabel, prettierPluginEstree],
   });
 
   await fs.writeFile(integrationFilePath, formatted, 'utf8');

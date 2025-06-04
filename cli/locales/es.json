@@ -21,6 +21,7 @@
   "We have developed test functionality that interacts with various locations for you. Would you like to add it?": "Hemos desarrollado una funcionalidad de prueba que interactúa con varias ubicaciones para ti. ¿Te gustaría añadirla?",
   "Widget successfully uploaded to": "¡Widget cargado con éxito en",
   "Starting dependency installation. This may take a few minutes...": "Iniciando la instalación de dependencias. Esto puede tardar unos minutos...",
+  "Installing dependencies...": "Instalando dependencias...",
   "Dependencies successfully installed!": "¡Dependencias instaladas con éxito!",
   "Your Kommo React widget has been successfully created.": "Tu widget de Kommo React ha sido creado con éxito.",
   "To get started:": "Para comenzar:",

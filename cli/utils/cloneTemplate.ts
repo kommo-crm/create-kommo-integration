@@ -1,5 +1,4 @@
 import path from 'path';
-import { fileURLToPath } from 'url';
 
 import fs from 'fs-extra';
 import chalk from 'chalk';
@@ -7,11 +6,8 @@ import chalk from 'chalk';
 import { i18n } from './i18n.js';
 import { log } from './log.js';
 
-const __dirname = path.dirname(fileURLToPath(import.meta.url));
-
 const templateDir = path.resolve(
   __dirname,
-  '..',
   '..',
   'templates',
   'kommo-react-integration'
