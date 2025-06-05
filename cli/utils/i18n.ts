@@ -6,7 +6,7 @@ import { AvailableLocale } from '../types.js';
 const translations: Record<string, string> = {};
 
 export const setLocale = (locale: AvailableLocale): void => {
-  const localesPath = path.join(__dirname, '..', 'locales', `${locale}.json`);
+  const localesPath = path.join(__dirname, 'locales', `${locale}.json`);
 
   if (fs.existsSync(localesPath)) {
     Object.assign(
