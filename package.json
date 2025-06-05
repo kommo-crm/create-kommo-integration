@@ -1,12 +1,14 @@
 {
   "name": "@kommo-crm/create-kommo-integration",
-  "version": "1.1.1",
-  "main": "cli/index.js",
+  "version": "1.1.6",
+  "main": "dist/cli/index.js",
   "bin": {
     "create-kommo-integration": "dist/cli/index.js"
   },
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "postinstall": "cd ./templates/kommo-react-integration/client && yarn install && cd ../..",
     "build": "yarn lint && rm -rf dist && tsup && node dist/cli/build.js",
     "dev": "yarn build && node dist/cli/index.js",
     "eslint": "eslint --quiet",

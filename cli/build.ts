@@ -10,13 +10,7 @@ const distDir = path.resolve(projectRoot, 'dist');
  * tsc will only compile the files that are referenced in tsconfig.json,
  * so we'll copy all needed  dist directory
  */
-const filesToCopy = [
-  '.gitignore',
-  'README.md',
-  'package.json',
-  'cli/locales',
-  'templates',
-];
+const filesToCopy = ['.gitignore', 'cli/locales', 'templates'];
 
 const gitignorePath = path.join(projectRoot, '.gitignore');
 
