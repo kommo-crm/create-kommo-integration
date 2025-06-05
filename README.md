@@ -23,7 +23,7 @@ npm install -g @kommo-crm/create-kommo-integration@latest
 Run the CLI with the following command:
 
 ```
-@kommo-crm/create-kommo-integration@latest [directory] [options]
+npx @kommo-crm/create-kommo-integration@latest [directory] [options]
 ```
 
 ### Options
@@ -37,7 +37,7 @@ If no language is specified, the CLI will prompt you to select one.
 ## Example Usage
 
 ```
-@kommo-crm/create-kommo-integration@latest my-widget --en
+npx @kommo-crm/create-kommo-integration@latest my-widget --en
 ```
 
 This command creates a new widget project named _my-widget_ with English as the selected language of CLI interface.
