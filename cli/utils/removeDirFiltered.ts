@@ -2,6 +2,13 @@ import path from 'path';
 
 import fs from 'fs-extra';
 
+/**
+ * Normalize path for windows.
+ */
+const normalizePath = (p: string): string => {
+  return p.replace(/\\/g, '/');
+};
+
 export async function removeDirFiltered(
   dir: string,
   filter: (filePath: string, stats: fs.Stats) => boolean
@@ -22,10 +29,10 @@ export async function removeDirFiltered(
       const stillExists = await fs.pathExists(entryPath);
       const isEmpty = (await fs.readdir(entryPath)).length === 0;
 
-      if (stillExists && isEmpty && filter(entryPath, stats)) {
+      if (stillExists && isEmpty && filter(normalizePath(entryPath), stats)) {
         await fs.remove(entryPath);
       }
-    } else if (filter(entryPath, stats)) {
+    } else if (filter(normalizePath(entryPath), stats)) {
       await fs.remove(entryPath);
     }
   }
