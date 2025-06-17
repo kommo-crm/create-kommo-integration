@@ -1,0 +1,48 @@
+{
+  "widget": {
+    "name": "Kommo entegrasyonu",
+    "short_description": "Kısa açıklama",
+    "description": "Tam açıklama",
+    "tour_description": "Tur açıklaması"
+  },
+  "settings": {
+    "text": "Metin girin"
+  },
+  "advanced": {
+    "title": "React Widget Boilerplate"
+  },
+  "salesbot": {
+    "button_title": "Tuş başlığı",
+    "button_caption": "Tuş açıklaması",
+    "button_title_default_value": "Tuş başlığı",
+    "button_caption_default_value": "Tuş açıklaması",
+    "text": "Metin",
+    "number": "Sayı",
+    "url": "URL",
+    "handler_name": "Handler ismi",
+    "success_callback_title": "Başarılı",
+    "fail_callback_title": "Başarısız"
+  },
+  "Your title in the widget’s modal": "Widget modal'ındaki başlığınız",
+  "The button at the bottom will open the advanced settings page, but only after saving": "Alttaki tuş, yalnızca kaydettikten sonra gelişmiş ayarlar sayfasını açacaktır.",
+  "Click": "Tıkla",
+  "You saved this text in the settings": "Bu metni ayarlarda kaydettiniz",
+  "Default": "Varsayılan",
+  "Call": "Arama",
+  "Error": "Hata",
+  "Notifications": "Bildirimler",
+  "Notification header text": "Bildirim başlık metni",
+  "Enter the notification header text here": "Bildirim başlık metnini buraya girin",
+  "Notification text": "Bildirim metni",
+  "Enter the notification text here": "Bildirim metnini buraya girin",
+  "Select type of notification": "Bildirim türünü seçin",
+  "Notify": "Bildir",
+  "You can read more about the notifications": "Bildirimler hakkında daha fazla bilgi edinebilirsiniz",
+  "here": "buradan",
+  "success": "Başarılı",
+  "fail": "Başarısız",
+  "Integration source was added to pipeline!": "Entegrasyon kaynağı boruya eklendi!",
+  "Pipeline id is": "Boru hattı kimliği",
+  "Congratulations!": "Tebrikler!",
+  "Your widget was successfully initialized!": "Widget'ınız başarıyla başlatıldı!"
+}

@@ -11,6 +11,14 @@ export enum AvailableLocale {
    * Portuguese language locale.
    */
   Portuguese = 'pt',
+  /**
+   * Turkish language locale.
+   */
+  Turkish = 'tr',
+  /**
+   * Indonesian language locale.
+   */
+  Indonesian = 'id',
 }
 
 export const enum LocationWithAdditionalProps {

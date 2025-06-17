@@ -27,17 +27,10 @@ export const detectSystemLocale = (): AvailableLocale | null => {
   );
 };
 
-type ForcedLocales = Partial<
-  Record<
-    | AvailableLocale.English
-    | AvailableLocale.Portuguese
-    | AvailableLocale.Spanish,
-    boolean
-  >
->;
+type ForcedLocales = Record<AvailableLocale, boolean>;
 
 export const getLocale = async (forcedLocales: ForcedLocales) => {
-  const { es, pt, en } = forcedLocales;
+  const { es, pt, en, id, tr } = forcedLocales;
 
   let locale = AvailableLocale.English;
 
@@ -52,6 +45,14 @@ export const getLocale = async (forcedLocales: ForcedLocales) => {
 
     case en:
       locale = AvailableLocale.English;
+      break;
+
+    case id:
+      locale = AvailableLocale.Indonesian;
+      break;
+
+    case tr:
+      locale = AvailableLocale.Turkish;
       break;
 
     default: {
@@ -71,6 +72,8 @@ export const getLocale = async (forcedLocales: ForcedLocales) => {
               { name: 'English', value: AvailableLocale.English },
               { name: 'Español', value: AvailableLocale.Spanish },
               { name: 'Português', value: AvailableLocale.Portuguese },
+              { name: 'Türkçe', value: AvailableLocale.Turkish },
+              { name: 'Bahasa Indonesia', value: AvailableLocale.Indonesian },
             ],
             theme: {
               helpMode: 'never',

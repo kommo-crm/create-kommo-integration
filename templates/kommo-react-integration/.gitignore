@@ -4,3 +4,5 @@
 
 .vscode
 .idea
+.env
+kommo_token.json

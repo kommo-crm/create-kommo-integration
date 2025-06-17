@@ -3,8 +3,8 @@ import path from 'path';
 import fs from 'fs-extra';
 import chalk from 'chalk';
 
-import { i18n } from './i18n.js';
-import { log } from './log.js';
+import { log } from '../utils/log';
+import { i18n } from '../utils/i18n';
 
 const templateDir = path.resolve(
   __dirname,

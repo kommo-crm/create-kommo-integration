@@ -4,20 +4,20 @@ import { Command } from 'commander';
 import chalk from 'chalk';
 import { rimraf } from 'rimraf';
 
-import { log } from './utils/log.js';
-import { i18n, setLocale } from './utils/i18n.js';
-import { cloneTemplate } from './utils/cloneTemplate.js';
-import { logFinalMessage } from './utils/logFinalMessage.js';
+import { log } from './utils/log';
+import { i18n, setLocale } from './utils/i18n';
+import { logFinalMessage } from './utils/logFinalMessage';
 
-import { getProjectDir } from './prompts/getProjectDir.js';
-import { getLocale } from './prompts/getLocale.js';
-import { getManifest } from './prompts/getManifest.js';
-import { getIsTestFunctionalityEnabled } from './prompts/getIsTestFunctionalityEnabled.js';
+import { getProjectDir } from './prompts/getProjectDir';
+import { getLocale } from './prompts/getLocale';
+import { getManifest } from './prompts/getManifest';
+import { getIsTestFunctionalityEnabled } from './prompts/getIsTestFunctionalityEnabled';
 
-import { updateManifest } from './transformers/updateManifest.js';
-import { installDeps } from './transformers/installDeps.js';
-import { injectCallbacks } from './transformers/injectCallbacks.js';
-import { deleteUnusedLocales } from './transformers/deleteUnusedLocales.js';
+import { installDeps } from './transformers/installDeps';
+import { cloneTemplate } from './transformers/cloneTemplate';
+import { updateManifest } from './transformers/updateManifest';
+import { injectCallbacks } from './transformers/injectCallbacks';
+import { deleteUnusedLocales } from './transformers/deleteUnusedLocales';
 
 const program = new Command();
 
@@ -42,12 +42,16 @@ program
   .option('--en', 'Use English language')
   .option('--es', 'Usa el idioma español')
   .option('--pt', 'Use o idioma português')
+  .option('--id', 'Gunakan bahasa Indonesia')
+  .option('--tr', 'Türkçe dilini kullanın')
   .action(async (dirName, options) => {
     try {
       const locale = await getLocale({
         en: options.en,
         es: options.es,
         pt: options.pt,
+        id: options.id,
+        tr: options.tr,
       });
 
       setLocale(locale);

@@ -41,6 +41,8 @@
   "here": "here",
   "success": "Success",
   "fail": "Fail",
+  "Integration source was added to pipeline!": "Integration source was added to pipeline!",
+  "Pipeline id is": "Pipeline id is",
   "Congratulations!": "Congratulations!",
-  "Your widget was successfully initialized!": " Your widget was successfully initialized!"
+  "Your widget was successfully initialized!": "Your widget was successfully initialized!"
 }

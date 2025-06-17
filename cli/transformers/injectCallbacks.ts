@@ -57,6 +57,13 @@ const preserveCallbacksSet = new Set([
   'bindActionsCallback',
 ]);
 
+const serverDependantLocations: Record<string, boolean> = {
+  salesbot_designer: true,
+  digital_pipeline: true,
+  sms: true,
+  mobile_card: true,
+};
+
 const filterCallbackFileSystem = async (options: {
   locations: InjectOptions['locations'];
   projectDir: InjectOptions['projectDir'];
@@ -96,17 +103,32 @@ const filterCallbackFileSystem = async (options: {
     );
   }
 
+  let serverRemoved = false;
+
   if (!isTestFunctionalityEnabled) {
     await Promise.all([
       fs.remove(`${clientSrcDir}/callbacks`),
       fs.remove(`${clientSrcDir}/pages/*`),
       fs.remove(`${clientSrcDir}/components/*`),
+      fs.remove(`${projectDir}/server/*`),
     ]);
 
     await fs.copy(
       `${clientSrcDir}/__emptyCallbacks__`,
       `${clientSrcDir}/callbacks`
     );
+
+    serverRemoved = true;
+  }
+
+  if (!serverRemoved) {
+    const shouldKeepServer = locations.some((location) => {
+      return serverDependantLocations[location];
+    });
+
+    if (!shouldKeepServer) {
+      await fs.remove(`${projectDir}/server`);
+    }
   }
 
   await fs.remove(`${clientSrcDir}/__emptyCallbacks__`);

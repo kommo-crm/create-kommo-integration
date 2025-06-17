@@ -3,6 +3,8 @@ import chalk from 'chalk';
 
 import { i18n } from '../utils/i18n.js';
 
+import { AvailableLocale } from '../types.js';
+
 import { safePromptWrapper } from './utils/safePromptWrapper.js';
 
 const LOCATIONS_PAGE_SIZE = 28;
@@ -108,9 +110,11 @@ export const getManifest = async () => {
           'Select locales (languages) for your widget'
         )} ${i18n('(press Space to select, A — select all, I — reset current selection and select unmarked. Press Enter to continue).')} ${i18n('Learn more:')} ${chalk.underline(chalk.blue('https://developers.kommo.com/docs/manifest-json'))}`,
         choices: [
-          { name: i18n('English'), value: 'en' },
-          { name: i18n('Spanish'), value: 'es' },
-          { name: i18n('Portuguese'), value: 'pt' },
+          { name: i18n('English'), value: AvailableLocale.English },
+          { name: i18n('Spanish'), value: AvailableLocale.Spanish },
+          { name: i18n('Portuguese'), value: AvailableLocale.Portuguese },
+          { name: i18n('Turkish'), value: AvailableLocale.Turkish },
+          { name: i18n('Indonesian'), value: AvailableLocale.Indonesian },
         ],
         validate: (input) =>
           input.length ? true : i18n('Please select at least one language.'),

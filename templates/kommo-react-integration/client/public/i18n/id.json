@@ -1,0 +1,48 @@
+{
+  "widget": {
+    "name": "Integrasi Kommo",
+    "short_description": "Deskripsi singkat",
+    "description": "Deskripsi lengkap",
+    "tour_description": "Deskripsi tur"
+  },
+  "settings": {
+    "text": "Masukkan teks"
+  },
+  "advanced": {
+    "title": "React Widget Boilerplate"
+  },
+  "salesbot": {
+    "button_title": "Judul tombol",
+    "button_caption": "Keterangan tombol",
+    "button_title_default_value": "Judul tombol",
+    "button_caption_default_value": "Keterangan tombol",
+    "text": "Teks",
+    "number": "Angka",
+    "url": "URL",
+    "handler_name": "Nama handler",
+    "success_callback_title": "Sukses",
+    "fail_callback_title": "Gagal"
+  },
+  "Your title in the widget’s modal": "Judulmu di modal widget",
+  "The button at the bottom will open the advanced settings page, but only after saving": "Tombol di bawah akan membuka halaman pengaturan lanjutan, tapi hanya setelah disimpan",
+  "Click": "Klik",
+  "You saved this text in the settings": "Teks ini telah kamu simpan di pengaturan",
+  "Default": "Default",
+  "Call": "Panggilan",
+  "Error": "Error",
+  "Notifications": "Notifikasi",
+  "Notification header text": "Teks header notifikasi",
+  "Enter the notification header text here": "Masukkan teks header notifikasi di sini",
+  "Notification text": "Teks notifikasi",
+  "Enter the notification text here": "Masukkan teks notifikasi di sini",
+  "Select type of notification": "Pilih jenis notifikasi",
+  "Notify": "Beri notifikasi",
+  "You can read more about the notifications": "Kamu bisa baca lebih lanjut tentang notifikasi",
+  "here": "di sini",
+  "success": "Sukses",
+  "fail": "Gagal",
+  "Integration source was added to pipeline!": "Sumber integrasi ditambahkan ke saluran!",
+  "Pipeline id is": "ID saluran adalah",
+  "Congratulations!": "Selamat!",
+  "Your widget was successfully initialized!": "Widget kamu berhasil diinisialisasi!"
+}

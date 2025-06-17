@@ -1,3 +1,4 @@
+import React from 'react';
 import { createRoot } from 'react-dom/client';
 
 import { SettingsCallback } from 'vendor/types/integration-types';
