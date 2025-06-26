@@ -1,4 +1,5 @@
 import path from 'path';
+import { fileURLToPath } from 'url';
 
 import webpack from 'webpack';
 import ZipPlugin from 'zip-webpack-plugin';
@@ -7,22 +8,26 @@ import { CleanWebpackPlugin } from 'clean-webpack-plugin';
 import Dotenv from 'dotenv-webpack';
 import hashSum from 'hash-sum';
 import md5 from 'md5';
-
 import 'webpack-dev-server';
 
-import crmModuleAliases from './src/crmModuleAliases';
+import crmModuleAliases from './src/crmModuleAliases.ts';
 
-const enum Environments {
-  DEV = 'dev',
-  PROD = 'prod',
-}
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
-const enum Mode {
-  DEV = 'dev',
-  PROD = 'prod',
-}
+const Environments = {
+  DEV: 'dev',
+  PROD: 'prod',
+} as const;
 
-const ENVIRONMENT = process.env.ENVIRONMENT as Environments;
+const Mode = {
+  DEV: 'dev',
+  PROD: 'prod',
+} as const;
+
+type EnvironmentType = (typeof Environments)[keyof typeof Environments];
+
+const ENVIRONMENT = process.env.ENVIRONMENT as EnvironmentType;
 const PORT = process.env.LOCALHOST_PORT || 9000;
 
 const isDev = ENVIRONMENT === Environments.DEV;
