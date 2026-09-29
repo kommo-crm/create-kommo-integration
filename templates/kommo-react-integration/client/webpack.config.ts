@@ -12,15 +12,19 @@ import 'webpack-dev-server';
 
 import crmModuleAliases from './src/crmModuleAliases';
 
-const enum Environments {
-  DEV = 'dev',
-  PROD = 'prod',
-}
+const Environments = {
+  DEV: 'dev',
+  PROD: 'prod',
+} as const;
 
-const enum Mode {
-  DEV = 'dev',
-  PROD = 'prod',
-}
+type Environments = (typeof Environments)[keyof typeof Environments];
+
+const Mode = {
+  DEV: 'dev',
+  PROD: 'prod',
+} as const;
+
+type Mode = (typeof Mode)[keyof typeof Mode];
 
 const ENVIRONMENT = process.env.ENVIRONMENT as Environments;
 const PORT = process.env.LOCALHOST_PORT || 9000;
